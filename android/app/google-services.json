@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "278929025969",
+    "project_id": "toko-776e3",
+    "storage_bucket": "toko-776e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278929025969:android:3faceeae14f46819516b90",
+        "android_client_info": {
+          "package_name": "com.example.toko_bangunan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278929025969-q6cvukv88o9fs7lvqo7l2qqgl05vp1gg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKSbG54xZyv73_hfwDszKj5CujAia4D3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278929025969-q6cvukv88o9fs7lvqo7l2qqgl05vp1gg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
