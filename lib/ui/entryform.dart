@@ -32,7 +32,7 @@ class EntryFormState extends State<EntryForm> {
     return Scaffold(
         appBar: AppBar(
           title: contact == null ? Text('Tambah') : Text('Rubah'),
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.purple,
           leading: Icon(Icons.arrow_back),
         ),
         body: Padding(
@@ -99,7 +99,7 @@ class EntryFormState extends State<EntryForm> {
                     // tombol simpan
                     Expanded(
                       child: RaisedButton(
-                        color: Colors.green,
+                        color: Colors.purple,
                         textColor: Theme.of(context).primaryColorLight,
                         child: Text(
                           'Save',

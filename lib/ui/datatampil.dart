@@ -12,14 +12,14 @@ class DataTampil extends StatefulWidget {
 class _DataTampilState extends State<DataTampil> {
   //inget ganti yang isi 192.168.1.3 ini sesuaikan sama IP punya mu yang di IPConfig
   Future getProducts() async {
-  final String url = "http://192.168.1.106/api/products";
+  final String url = "http://192.168.1.108/api/products";
     var response = await http.get(Uri.parse(url));
     print(jsonDecode(response.body));
     return jsonDecode(response.body);
   }
 
   Future deleteData(String dataId) async {
-    final String url = "http://192.168.1.106/api/products/" + dataId;
+    final String url = "http://192.168.1.108/api/products/" + dataId;
     var response = await http.delete(Uri.parse(url));
 
     return jsonDecode(response.body);
@@ -30,7 +30,7 @@ class _DataTampilState extends State<DataTampil> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Data Pelanggan"),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.purple,
       ),
       body: Container(
         width: double.maxFinite,

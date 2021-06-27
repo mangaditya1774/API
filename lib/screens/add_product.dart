@@ -12,7 +12,7 @@ class AddProduct extends StatelessWidget {
   TextEditingController _imageUrlController = TextEditingController();
   saveProduct()async{
     final response =
-      await http.post(Uri.parse("http://192.168.1.106:80/api/products"),body:{
+      await http.post(Uri.parse("http://192.168.1.108:80/api/products"),body:{
         "name":_nameController.text,
         "description":_descriptionController.text,
         "price":_priceController.text,
@@ -26,7 +26,7 @@ class AddProduct extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Add Product"),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.purple,
         ),
         body: Form(
           key: _formKey,

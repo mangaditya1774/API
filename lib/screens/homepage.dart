@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-final String url = 'http://192.168.1.106:80/api/products';
+final String url = 'http://192.168.1.108:80/api/products';
 
 Future getProducts()async {
   var response = await http.get(Uri.parse(url));
@@ -25,7 +25,7 @@ Future getProducts()async {
 }
 
 Future deleteProduct(String productId) async{
-  String url = "http://192.168.1.106:80/api/products/" +productId;
+  String url = "http://192.168.1.108:80/api/products/" +productId;
 
   var response = await http.delete(Uri.parse(url));
   return json.decode(response.body);
@@ -40,10 +40,10 @@ Future deleteProduct(String productId) async{
          Navigator.push(context, MaterialPageRoute(builder: (context) => AddProduct()));
         },
         child: Icon(Icons.add),
-        backgroundColor: Colors.lightGreen,
+        backgroundColor: Colors.purple,
         ),
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.purple,
         title: Text('Produk List'),
       ),
       body: FutureBuilder(

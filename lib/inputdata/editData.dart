@@ -19,7 +19,7 @@ class EditData extends StatelessWidget {
     // karena ingin mengedit data maka menggunakan method PUT maka perlu tambahan body karena di body API kita akan menambahkan data object yang sudah ditulis harus sama dengan yang ada di API
     // dan tambahan pada url yaitu upload ["id"] fungsinya untuk mengetahui id data ke berapa yang diedit pada API
     final response = await http
-        .put(Uri.parse("http://192.168.1.106:80/api/products/" + input['id'].toString()), body: {
+        .put(Uri.parse("http://192.168.1.108:80/api/products/" + input['id'].toString()), body: {
       "name": nameController.text,
       "price": priceController.text,
       "jumlah": jumlahController.text,

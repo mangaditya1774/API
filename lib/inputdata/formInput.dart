@@ -18,7 +18,7 @@ class _FormInputState extends State<FormInput> {
   //membuat method POST untuk Upload data ke API
   saveUpload() async {
     // karena ingin menambahkan data/POST maka perlu tambahan body karena di body API kita akan menambahkan data object yang ditulis harus sama dengan yang ada di API
-    final response = await http.post(Uri.parse("http://192.168.1.106:80/api/products"), body: {
+    final response = await http.post(Uri.parse("http://192.168.1.108:80/api/products"), body: {
       "name": nameController.text,
       "price": priceController.text,
       "jumlah": jumlahController.text,

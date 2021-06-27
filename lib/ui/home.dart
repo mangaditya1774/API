@@ -26,13 +26,13 @@ class HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Data Pembelian Barang'),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.purple
       ),
       body: createListView(),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         tooltip: 'Tambah Data',
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.purple,
         onPressed: () async {
           var contact = await navigateToEntryForm(context, null);
           if (contact != null) addContact(contact);

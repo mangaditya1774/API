@@ -15,7 +15,7 @@ class EditProduct extends StatelessWidget {
   TextEditingController _imageUrlController = TextEditingController();
   Future updateProduct()async{
     final response =
-      await http.post(Uri.parse("http://192.168.1.106:80/api/products" + product['id'].toString()),body:{
+      await http.post(Uri.parse("http://192.168.1.108:80/api/products" + product['id'].toString()),body:{
         "name":_nameController.text,
         "description":_descriptionController.text,
         "price":_priceController.text,

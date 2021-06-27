@@ -9,7 +9,7 @@ class About extends StatelessWidget {
           "Tentang Aplikasi",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
-        backgroundColor: Colors.green
+        backgroundColor: Colors.purple
       ),
       body: new ListView(
         children: <Widget>[
@@ -20,7 +20,7 @@ class About extends StatelessWidget {
           ),
           Container(
             child: Text(
-              "Layanan Aplikasi Yang Memberikan Kemudahan Bagi Pengguna Dalam Menemukan Bahan Bangunan Yang Akan Dibeli Dengan Mudah dan Cepat. Tersedia Banyak Promo Tiap Bulannya.",
+              "Layanan Aplikasi Yang Memberikan Kemudahan Bagi Pengguna Dalam Menemukan Property Yang Diinginkan Dengan Mudah dan Cepat. Tersedia Banyak Promo Tiap Bulannya.",
               style: TextStyle(
                 fontWeight: FontWeight.normal,
                 fontSize: 20,

@@ -11,10 +11,10 @@ class _BerandaState extends State<Beranda> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.purple,
         title:
             Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
-          Text('E-Building'),
+          Text('E-Property'),
          ]),
          actions: <Widget>[
             IconButton(
@@ -35,13 +35,13 @@ class _BerandaState extends State<Beranda> {
         child: new ListView(
           children: <Widget>[
             new UserAccountsDrawerHeader(
-              accountName: new Text("Adi Hananjoyo"), 
-              accountEmail: new Text ("adi.hananjoyo@undiksha.ac.id"),
+              accountName: new Text("I Nyoman Aditya Triguna"), 
+              accountEmail: new Text ("aditya.triguna@undiksha.ac.id"),
               currentAccountPicture: new GestureDetector(
                 onTap: () {},
                 child: new CircleAvatar(
                   backgroundImage: new AssetImage(
-                    'assets/images/anan.jpg'),
+                    'assets/images/mangaditya.jpeg'),
                   ),
                 ),
                 decoration: BoxDecoration(
@@ -80,10 +80,10 @@ class _BerandaState extends State<Beranda> {
 //seluruh boody dibungkus colomn
       body: new ListView(
         children: <Widget>[
-          Image.network ("https://i0.wp.com/bangunin.id/wp-content/uploads/2020/04/tiga-roda.jpg?resize=700%2C688&ssl=1"),
+          Image.network ("https://asset.kompas.com/crops/ZGXL3kmznTjHIk4v1C1OIQQXjHA=/0x144:1080x864/750x500/data/photo/2020/10/14/5f8676420501a.jpg"),
 // setiap bagian pada body dipisahkan container
           Container(
-            color: Colors.greenAccent[100],
+            color: Colors.purpleAccent[100],
             padding: const EdgeInsets.all(10) ,
             //untuk membuat tampilan secara horisontal maka digunakan row
             child: Row(
@@ -130,7 +130,7 @@ class _BerandaState extends State<Beranda> {
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Icon(Icons.grid_on,color: Colors.green),
+                    Icon(Icons.grid_on,color: Colors.purple),
                     Container(
                       margin: const EdgeInsets.only(top: 8),
                       child: Text(
@@ -138,7 +138,7 @@ class _BerandaState extends State<Beranda> {
                         style: TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.w400,
-                          color: Colors.green
+                          color: Colors.purple
                         ),
                       ),
                     ),
@@ -148,7 +148,7 @@ class _BerandaState extends State<Beranda> {
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment : MainAxisAlignment.center,
                   children: <Widget>[
-                    Icon(Icons.share, color: Colors.green),
+                    Icon(Icons.share, color: Colors.purple),
                     Container(
                       margin: const EdgeInsets.only(top:8),
                       child: Text(
@@ -166,7 +166,7 @@ class _BerandaState extends State<Beranda> {
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Icon(Icons.near_me, color: Colors.green),
+                    Icon(Icons.near_me, color: Colors.purple),
                     Container(
                       margin: const EdgeInsets.only(top: 8),
                       child: Text(
@@ -174,7 +174,7 @@ class _BerandaState extends State<Beranda> {
                         style: TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.w400,
-                          color: Colors.green,
+                          color: Colors.purple,
                         ),
                       ),
                     ), 
@@ -184,7 +184,7 @@ class _BerandaState extends State<Beranda> {
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Icon(Icons.call, color: Colors.green),
+                    Icon(Icons.call, color: Colors.purple),
                     Container(
                       margin: const EdgeInsets.only(top: 8),
                       child: Text(
@@ -192,7 +192,7 @@ class _BerandaState extends State<Beranda> {
                         style: TextStyle(
                           fontSize : 10,
                           fontWeight: FontWeight.w400,
-                          color: Colors.green,
+                          color: Colors.purple
                         ),
                       ),
                     ),
@@ -207,7 +207,7 @@ class _BerandaState extends State<Beranda> {
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
-                colors: [Colors.orange, Colors.yellow],
+                colors: [Colors.orange, Colors.blueGrey],
               ),
               borderRadius: BorderRadius.circular(5),
             ),
@@ -218,12 +218,12 @@ class _BerandaState extends State<Beranda> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Bahan bangunan',
+                        'Property',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
                         ),
                       Text(
-                        'Diskon up to 30%',
+                        'Diskon up to 35%',
                         style: TextStyle(
                           color: Colors.black87,
                         ),
